@@ -1,0 +1,15 @@
+Why We Need driver:
+
+
+
+The driver object represents the browser session created by WebDriver.
+When you create an instance of JavascriptExecutor, you need to cast the driver to this interface.
+This allows you to access the executeScript method, which executes JavaScript code.
+
+
+
+
+An object repository is a common storage location where we store a collection of all required application objects and their properties123.
+ In Selenium WebDriver context, objects would typically be the locators used to uniquely identify web elements2. 
+The major advantage of using object repository is the segregation of objects from test cases2. The Object Repository ensures the management, reusability, 
+and reliability of UI elements by capturing them as objects in a DOM-like repository, sharable across projects

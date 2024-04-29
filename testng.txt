@@ -1,0 +1,73 @@
+TestNG (Test Next Generation) is a powerful and flexible testing framework for Java applications. 
+It was created by Cedric Beust and is inspired by JUnit and NUnit. TestNG aims to cover a wider range of test categories, including unit testing, 
+functional testing, end-to-end testing, and integration testing. Here are some key features of TestNG:
+
+Annotations: TestNG uses annotations (such as @Test, @BeforeClass, and @AfterMethod) to define test methods and their behavior. 
+These annotations provide flexibility and control over test execution.
+
+Groups: You can organize test methods into groups (e.g., “fast,” “slow,” etc.).
+ This allows you to selectively run specific groups of tests based on your requirements.
+
+Parameters: TestNG supports parameterization, allowing you to pass data to test methods. This is useful for data-driven testing scenarios.
+
+Data-Driven Testing: With the @DataProvider annotation, you can supply test data from external sources (e.g., Excel files, databases) to your test methods.
+
+Parallel Execution: TestNG allows you to run tests in parallel, either at the method level or class level. This can significantly speed up test execution.
+
+
+Flexible Configuration: You can configure test suites, listeners, and other settings using XML files or programmatically.
+
+No Need to Extend Classes: Unlike JUnit, there’s no need to extend a specific class or implement an interface.
+ 
+Test methods can have any name, and it’s the annotations that define their purpose.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Selenium’s Actions Class:
+The Actions class in Selenium is essential for simulating complex user interactions within web applications. 
+It enables developers and testers to perform various actions, such as mouse movements, keyboard inputs, drag-and-drop operations, and more.
+Here are some common methods provided by the Actions class:
+
+Mouse Actions:
+doubleClick(): Performs a double click on an element.
+clickAndHold(): Performs a long click on the mouse without releasing it.
+dragAndDrop(): Drags an element from one point and drops it to another.
+moveToElement(): Shifts the mouse pointer to the center of an element.
+contextClick(): Performs a right-click on the mouse.
+
+Keyboard Actions:
+sendKeys(): Sends a series of keys to an element.
+keyUp(): Performs a key release.
+keyDown(): Performs a keypress without releasing it.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WebDriverWait Initialization:
+
+A WebDriverWait object named wait1 is created with a timeout of 10 seconds.
+This object is used to wait for an element to become clickable before proceeding.
+
+Waiting for an Element to Be Clickable:
+The wait1.until method waits for the submenu element to become clickable.
+The submenu element is expected to be defined elsewhere in the code.
+Mouse Hover Action:
+------------------
+An Actions object named action is created to perform mouse-related actions.
+The submenu element is located using driver.findElement(submenu).
+The moveToElement method is called on the action object to move the mouse cursor to the submenu element.
+
+Retrieving Text from an Element:
+-----------------------------------
+The firstDropdownbtn element is located using driver.findElement(firstDropdownbtn).
+The text content of the firstDropdownbtn element is extracted using .getText().
+The extracted text is stored in a String variable called firstDropdown.
+Finally, the firstDropdown value is printed to the console.
+
+
+Note:
+-----
+
+The code assumes that the driver object (WebDriver) is already initialized elsewhere in the program.
+The actual values of submenu and firstDropdownbtn are not provided in the snippet and should be defined elsewhere.
+Overall, the method eventsSubMenue waits for the submenu element to be clickable,
+ hovers the mouse over it, and then retrieves and prints the text content of the firstDropdownbtn element.
